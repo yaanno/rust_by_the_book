@@ -23,8 +23,6 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
-        println!("You guessed: {}", guess);
-
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue
